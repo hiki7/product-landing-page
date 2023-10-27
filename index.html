@@ -4,8 +4,135 @@
         <title>Landing Page</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     </head>
     <body>
-
+        <header id="header">
+            <nav id="nav-bar">
+                <div class="logo-container">
+                    <img 
+                        src="https://i.pinimg.com/736x/b2/38/01/b238018c0a4861898f3f44f78ce3eb2c.jpg" 
+                        alt="logo"
+                        id="header-img"
+                    />
+                    <span class="the-product">Manga</span>
+                </div>
+                <ul class="nav-links">
+                    <li>
+                        <a href="#features" class="nav-link">Features</a>
+                    </li>
+                    <li>
+                        <a href="#audio" class="nav-link">Recommendation</a>
+                    </li>
+                    <li>
+                        <a href="#for_sale" class="nav-link">For Sale</a>
+                    </li>
+                </ul>   
+            </nav>
+        </header>
+        <section id="email-section">
+            <h2>Beatifully Written Masterpieces</h2>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <input id="email" type="email" required placeholder="Enter your email address" name="email" />
+                <input type="submit" id="submit" value="GET STARTED" />
+            </form>
+        </section>
+        <section id="features">
+            <div class="feature">
+                <img src="https://cdn-icons-png.flaticon.com/512/3731/3731553.png" class="icon"/>
+                <div>
+                    <h2>Premium Material</h2>
+                    <p>
+                        Our Mangas the best paper which is sourced locally.
+                        This will increase the longevity of your purchase.
+                    </p>
+                </div>
+            </div>
+            <div class="feature">
+                <img src="https://static.thenounproject.com/png/3592848-200.png" class="icon" />
+                <div>
+                    <h2>1 Day Shipping</h2>
+                    <p>
+                        We make sure you receive your manga as soon as possible so that you can start reading immediately.
+                        We also provide free returns if you are not satisfied.
+                    </p>
+                </div>
+            </div>
+            <div class="feature">
+                <img src="https://www.iconpacks.net/icons/2/free-opened-book-icon-3163-thumb.png" class="icon" />
+                <div>
+                    <h2>Quality Manga Only</h2>
+                    <p>
+                        We make sure to only provide awesome manga. We guarantee that the manga you buy is one of the 
+                        top mangas on the market.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="audio">
+            <iframe id="video" height="400" src="https://www.youtube.com/embed/qNf3zL8MOhk?si=mrcQ1Y0BTgyDXU1H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </section>
+        <section id="for_sale">
+            <h2>For Sale</h2>
+            <div class="product-cards">
+                <div class="card">
+                    <div class="product-image product1"></div>
+                    <div class="inner-card">
+                        <div class="author">Inoue, Takehiko</div>
+                        <h1 class="header">Slam Dunk</h1>
+                        <p class="content">
+                            Hanamichi Sakuragi, a rowdy high schooler with a fiery red mane and incredible strength, yearns to break his 50-rejection streak and find a girlfriend at Shohoku High. Despite his troubled past, Haruko Akagi, unaware of his history, approaches him about basketball. In a clumsy attempt to impress her, he tries a slam dunk but crashes into the backboard. His unexpected athletic talent catches Haruko's attention, thrusting him into the world of basketball and into a rivalry for a girl he barely knows. Hanamichi soon realizes there's more to basketball than he thought.
+                        </p>
+                        <div class="flex">
+                            <p class="main-price">$9.99</p>
+                            <p class="old-price">$10.00</p>
+                        </div>
+                        <button class="add">
+                            <p style="margin-left: 5px">Add to Cart</p>
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="product-image product2"></div>
+                    <div class="inner-card">
+                        <div class="author">Yukimura, Makoto</div>
+                        <h1 class="header">Vinland Saga</h1>
+                        <p class="content">
+                            Thorfinn, a skilled young warrior seeking vengeance against his leader Askeladd for a family tragedy, joins a group of mercenaries. As he matures among the battle-loving Danes, he's torn between revenge and survival. When Askeladd plans to influence the future King of England by rescuing Danish prince Canute, their lives are forever changed. "Vinland Saga" unfolds a brutal tale of 11th-century Europe, a world of violence and injustice, where battle is a pleasure for some and hell for others.
+                        </p>
+                        <div class="flex">
+                            <p class="main-price">$8.99</p>
+                            <p class="old-price">$9.00</p>
+                        </div>
+                        <button class="add">
+                            <p style="margin-left: 5px">Add to Cart</p>
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="product-image product3"></div>
+                    <div class="inner-card">
+                        <div class="author">Fujisawa, Tooru</div>
+                        <h1 class="header">Great Teacher Onizuka</h1>
+                        <p class="content">
+                            22-year-old Eikichi Onizuka: pervert, former gang member... and teacher?
+                            Great Teacher Onizuka follows the incredible, though often ridiculous, antics of the titular teacher as he attempts to outwit and win over the cunning 
+                            Class 3-4 that is determined to have him removed from the school. However, other obstacles present themselves throughout—including the frustrated, balding vice principal, Hiroshi Uchiyamada; old enemies from his biker days; and his own idiotic teaching methods. But Eikichi fights it all whilst trying to help his students, romance fellow teacher Azusa Fuyutsuki, and earn his self-proclaimed title.
+                        </p>
+                        <div class="flex">
+                            <p class="main-price">$20.99</p>
+                            <p class="old-price">$21.00</p>
+                        </div>
+                        <button class="add">
+                            <p style="margin-left: 5px">Add to Cart</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </body>
 </html>
